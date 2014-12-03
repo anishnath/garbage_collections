@@ -1,10 +1,9 @@
-garbage_collections
-===================
-Visit the channel http://youtube.com/zarigatongy
-
-Test to know how to use different GC algorithms in java
 
 /*
+
+Author Anish Nath
+Visit the channel http://youtube.com/zarigatongy
+
  *java    TestSystemGC
  java -XX:+PrintCommandLineFlags -version TestSystemGC
 ==================Collector========================
@@ -35,6 +34,8 @@ Test to know how to use different GC algorithms in java
  *java   -XX:+UseLargePages -XX:+UseLargePagesInMetaspace TestSystemGC
  */
 
-
-
-
+public class TestSystemGC {
+  public static void main(String args[]) throws Exception {
+    System.gc();
+  }
+}
